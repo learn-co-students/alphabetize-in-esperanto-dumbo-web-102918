@@ -1,3 +1,6 @@
+
+
 def alphabetize(arr)
-  # code here
+  esperanto = "abcĉdefgĝhĥijĵklmnoprsŝtuŭvz"
+  arr.sort_by{|word|word.chars.map{|ch|esperanto.index(ch)}}
 end
