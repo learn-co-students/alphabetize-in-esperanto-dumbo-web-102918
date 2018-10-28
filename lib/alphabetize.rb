@@ -1,3 +1,16 @@
+require "pry"
+ESPERANTO_ALPHABET = "abcĉdefgĝhĥijĵklmnoprsŝtuŭvz"
+
 def alphabetize(arr)
-  # code here
+  new_array = []
+  arr.sort_by do |item|
+    
+  item.split("").collect do |letter|
+  
+  
+      ESPERANTO_ALPHABET.index(letter)
+ end
+
+end
+
 end
